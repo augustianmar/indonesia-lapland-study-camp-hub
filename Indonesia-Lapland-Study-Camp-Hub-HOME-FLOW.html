@@ -66,6 +66,44 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
 .empty-state{padding:80px 20px;text-align:center;color:#6d6761}.empty-state .empty-mark{font:400 48px var(--serif);color:var(--rust)}.empty-state h3{margin:10px 0 5px;font:400 28px var(--serif);color:var(--ink)}.empty-state p{font-size:11px}
 .placeholder-card{margin:26px auto;max-width:880px;padding:70px;border:1px solid var(--line);border-radius:28px;background:radial-gradient(circle at 100% 0,rgba(237,176,153,.33),transparent 24rem),var(--cream)}.placeholder-card h3{margin:5px 0 15px;font:400 54px/1 var(--serif);letter-spacing:-.04em}.placeholder-card p:last-child{max-width:540px;color:#5d5751;line-height:1.7}
 
+.home-section{padding:20px 20px 26px}
+.home-hero{padding:28px 30px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 100% 0,rgba(237,176,153,.33),transparent 24rem),linear-gradient(180deg,#fffaf4 0,#f8f0e6 100%);box-shadow:0 18px 60px rgba(58,40,30,.07)}
+.home-hero h3{margin:6px 0 10px;font:400 42px/1 var(--serif);letter-spacing:-.04em}
+.home-hero p{max-width:760px;margin:0;color:#615b55;line-height:1.7;font-size:13px}
+.home-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+.summary-card{padding:18px 18px 16px;border:1px solid var(--line);border-radius:18px;background:#fff}
+.summary-card .k{display:block;margin-bottom:10px;color:#875342;font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.summary-card strong{display:block;font:400 34px/1 var(--serif);letter-spacing:-.04em}
+.summary-card span{display:block;margin-top:6px;color:#6a635d;font-size:11px}
+.flow-board{position:relative;padding:32px 18px 24px;border:1px solid var(--line);border-radius:24px;background:#fff}
+.flow-board-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:18px}
+.flow-board-head h4{margin:0;font:400 30px/1 var(--serif);letter-spacing:-.03em}
+.flow-board-head p{margin:5px 0 0;color:#6a635d;font-size:12px}
+.flow-track{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:34px 0 8px}
+.flow-track:before{content:"";position:absolute;left:7%;right:7%;top:50%;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--sage),var(--peach),var(--rust));transform:translateY(-50%);opacity:.22}
+.flow-stage{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:14px}
+.flow-node{width:min(240px,100%);padding:16px 16px 14px;border:1px solid var(--line);border-radius:18px;background:#fffaf4;box-shadow:0 10px 28px rgba(0,0,0,.04);text-align:center}
+.flow-node .eyebrow{margin-bottom:10px}
+.flow-node h5{margin:0;font:400 28px/1 var(--serif);letter-spacing:-.03em}
+.flow-node .stage-count{margin-top:7px;color:#6d6761;font-size:11px}
+.flow-junction{width:18px;height:18px;border-radius:50%;border:4px solid #fff;background:var(--rust);box-shadow:0 0 0 4px rgba(166,83,56,.12)}
+.flow-lanes{width:100%;display:grid;grid-template-columns:1fr;gap:12px}
+.flow-lane{min-height:54px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-content:flex-start}
+.flow-chip{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;padding:9px 12px;border-radius:14px;border:1px solid rgba(23,23,21,.12);background:#fff;font-size:11px;line-height:1.2;box-shadow:0 6px 14px rgba(0,0,0,.03)}
+.flow-chip strong{font-size:11px}
+.flow-chip span{color:#756f69;font-size:9px}
+.flow-chip.is-partner{background:#eef4ef}
+.flow-chip.is-lead{background:#fdf0e8}
+.flow-chip.is-prospect{background:#f7f2e7}
+.flow-empty{padding:12px 10px;color:#7d766f;font-size:11px}
+.flow-arrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#8a5543}
+@media(max-width:960px){
+  .home-summary{grid-template-columns:1fr}
+  .flow-track{grid-template-columns:1fr;gap:20px}
+  .flow-track:before{left:50%;right:auto;top:8%;bottom:8%;width:6px;height:auto;transform:translateX(-50%)}
+}
+
+
 /* modal */
 .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px}.modal-backdrop{position:absolute;inset:0;background:rgba(23,23,21,.62);backdrop-filter:blur(5px)}.modal-card{position:relative;width:min(680px,100%);max-height:90vh;overflow:auto;padding:27px;border-radius:24px;background:var(--paper);box-shadow:0 32px 100px rgba(0,0,0,.28)}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}.modal-head h3{margin:0;font:400 38px/1 var(--serif)}.modal-close{border:0;background:transparent;font-size:28px;color:#7c756f}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid .full{grid-column:1/-1}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
 
@@ -122,10 +160,10 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
       </div>
 
       <nav class="sidebar-nav" aria-label="Primary">
-        <button class="nav-item" data-section="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item is-active" data-section="home"><span class="nav-icon">⌂</span><span>Home</span></button>
         <button class="nav-item" data-section="dashboard"><span class="nav-icon">◫</span><span>Dashboard</span></button>
         <div class="nav-label">RELATIONSHIPS</div>
-        <button class="nav-item is-active" data-section="contacts"><span class="nav-icon">◎</span><span>Contacts</span><span class="count-pill" id="contactsCount">0</span></button>
+        <button class="nav-item" data-section="contacts"><span class="nav-icon">◎</span><span>Contacts</span><span class="count-pill" id="contactsCount">0</span></button>
         <button class="nav-item" data-section="organisations"><span class="nav-icon">▦</span><span>Organisations</span></button>
         <button class="nav-item" data-section="schools"><span class="nav-icon">▤</span><span>Schools</span></button>
         <button class="nav-item" data-section="partners"><span class="nav-icon">↔</span><span>Partners</span></button>
@@ -153,7 +191,7 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
       <header class="topbar">
         <div>
           <p class="topbar-kicker">INDONESIA–LAPLAND STUDY CAMP HUB</p>
-          <h2 id="pageTitle">Contacts</h2>
+          <h2 id="pageTitle">Home</h2>
         </div>
         <div class="topbar-actions">
           <div class="global-search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search records" /></div>
@@ -162,7 +200,92 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
         </div>
       </header>
 
-      <section id="contactsSection" class="workspace-section">
+      
+      <section id="homeSection" class="workspace-section home-section">
+        <div class="home-hero">
+          <p class="eyebrow">RELATIONSHIP FLOW OVERVIEW</p>
+          <h3>Who is moving with us?</h3>
+          <p>Home now shows a simple visual relationship journey for the Indonesia–Lapland Study Camp project: who is still a prospect, who has moved into a lead, and who is already a partner moving with us. This can be adjusted as you add more people and companies.</p>
+        </div>
+
+        <div class="home-summary">
+          <div class="summary-card">
+            <span class="k">Prospects</span>
+            <strong id="homeProspectCount">0</strong>
+            <span>Early-stage contacts and organisations not yet actively moving with us.</span>
+          </div>
+          <div class="summary-card">
+            <span class="k">Leads</span>
+            <strong id="homeLeadCount">0</strong>
+            <span>Warm relationships in motion and under active development.</span>
+          </div>
+          <div class="summary-card">
+            <span class="k">Partners</span>
+            <strong id="homePartnerCount">0</strong>
+            <span>People and companies already moving with us more directly.</span>
+          </div>
+        </div>
+
+        <div class="flow-board">
+          <div class="flow-board-head">
+            <div>
+              <p class="eyebrow">MOVEMENT CONCEPT</p>
+              <h4>Prospect → Lead → Partner</h4>
+              <p>Names below show real people and companies currently inside the project flow.</p>
+            </div>
+            <div class="flow-arrow">Project movement ↗</div>
+          </div>
+
+          <div class="flow-track">
+            <article class="flow-stage">
+              <div class="flow-lanes">
+                <div class="flow-lane" id="prospectLaneTop"></div>
+              </div>
+              <div class="flow-junction"></div>
+              <div class="flow-node">
+                <p class="eyebrow">Stage 01</p>
+                <h5>Prospect</h5>
+                <div class="stage-count"><span id="prospectStageCount">0</span> in this stage</div>
+              </div>
+              <div class="flow-lanes">
+                <div class="flow-lane" id="prospectLaneBottom"></div>
+              </div>
+            </article>
+
+            <article class="flow-stage">
+              <div class="flow-lanes">
+                <div class="flow-lane" id="leadLaneTop"></div>
+              </div>
+              <div class="flow-junction"></div>
+              <div class="flow-node">
+                <p class="eyebrow">Stage 02</p>
+                <h5>Lead</h5>
+                <div class="stage-count"><span id="leadStageCount">0</span> in this stage</div>
+              </div>
+              <div class="flow-lanes">
+                <div class="flow-lane" id="leadLaneBottom"></div>
+              </div>
+            </article>
+
+            <article class="flow-stage">
+              <div class="flow-lanes">
+                <div class="flow-lane" id="partnerLaneTop"></div>
+              </div>
+              <div class="flow-junction"></div>
+              <div class="flow-node">
+                <p class="eyebrow">Stage 03</p>
+                <h5>Partner</h5>
+                <div class="stage-count"><span id="partnerStageCount">0</span> in this stage</div>
+              </div>
+              <div class="flow-lanes">
+                <div class="flow-lane" id="partnerLaneBottom"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactsSection" class="workspace-section is-hidden">
         <div class="viewbar">
           <div class="view-tabs">
             <button class="view-tab is-active">All Contacts</button>
@@ -211,6 +334,7 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
                     <th>Role / Type</th>
                     <th>Country</th>
                     <th>Status</th>
+                    <th>Stage</th>
                     <th>Owner</th>
                   </tr>
                 </thead>
@@ -250,6 +374,7 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
           <label><span>Role / Type</span><select name="type"><option>Partner</option><option>School</option><option>Operator</option><option>Distributor</option><option>Public Sector</option><option>Other</option></select></label>
           <label><span>Country</span><select name="country"><option>Finland</option><option>Indonesia</option><option>Sweden</option><option>Other</option></select></label>
           <label><span>Status</span><select name="status"><option>New</option><option>Warm</option><option>Active</option><option>Paused</option></select></label>
+          <label><span>Stage</span><select name="stage"><option>Prospect</option><option>Lead</option><option>Partner</option></select></label>
           <label><span>Owner</span><select name="owner"><option>Bohdan</option><option>Peder</option><option>Sunny</option><option>Simon</option><option>Augustian</option><option>LinArctic</option></select></label>
           <label class="full"><span>Email</span><input name="email" type="email" /></label>
           <label class="full"><span>Notes</span><textarea name="notes" rows="4"></textarea></label>
@@ -271,26 +396,43 @@ async function sha256(value){
 }
 
 const seedContacts = [
-  {name:"Junaldi Ihsan (Sunny)", organisation:"Indonesia field network", type:"Partner", country:"Indonesia", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Peder", organisation:"Destination Indonesia AB", type:"Partner", country:"Sweden", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Simon", organisation:"Europe Stay Edit Oy", type:"Partner", country:"Finland", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Jakub Wargin", organisation:"Lapland Escape", type:"Operator", country:"Finland", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Ariel Malada", organisation:"Indonesian community / festival network", type:"Partner", country:"Finland", status:"Warm", owner:"Augustian", email:"", notes:""},
-  {name:"Robin", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Evita", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", owner:"Augustian", email:"", notes:""},
-  {name:"Abbas", organisation:"Royal Lapland", type:"Operator", country:"Finland", status:"Warm", owner:"Augustian", email:"", notes:""}
+  {name:"Pirkko Sivonen", organisation:"Rovaniemi international visits", type:"Public Sector", country:"Finland", status:"New", stage:"Prospect", owner:"Augustian", email:"", notes:"Relevant institutional contact in Rovaniemi."},
+  {name:"International House Rovaniemi", organisation:"International House", type:"Public Sector", country:"Finland", status:"New", stage:"Prospect", owner:"Augustian", email:"", notes:"Interest shown; communication can continue."},
+  {name:"Ariel Malada", organisation:"Indonesian community / festival network", type:"Partner", country:"Finland", status:"Warm", stage:"Lead", owner:"Augustian", email:"", notes:"Promised to support with letter of interest."},
+  {name:"Abbas", organisation:"Royal Lapland", type:"Operator", country:"Finland", status:"Warm", stage:"Lead", owner:"Augustian", email:"", notes:"Warm operational contact."},
+  {name:"Junaldi Ihsan (Sunny)", organisation:"Indonesia field network", type:"Partner", country:"Indonesia", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Indonesia-side operational bridge."},
+  {name:"Peder", organisation:"Destination Indonesia AB", type:"Partner", country:"Sweden", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Important aviation/ticketing comparison partner."},
+  {name:"Simon", organisation:"Europe Stay Edit Oy", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Core team member."},
+  {name:"Jakub Wargin", organisation:"Lapland Escape", type:"Operator", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Local operational partner."},
+  {name:"Robin", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Active project stakeholder."},
+  {name:"Evita", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Active project stakeholder."}
 ];
+
+function normalizeContact(contact){
+  const c = {...contact};
+  if(!c.stage){
+    if(c.type === "Partner" || c.type === "Operator"){
+      c.stage = c.status === "Warm" || c.status === "New" ? "Lead" : "Partner";
+    } else if(c.status === "Warm" || c.status === "Active"){
+      c.stage = "Lead";
+    } else {
+      c.stage = "Prospect";
+    }
+  }
+  return c;
+}
 
 let state = {
   user: sessionStorage.getItem("ilsc-user") || "",
-  contacts: JSON.parse(localStorage.getItem("ilsc-contacts") || "null") || seedContacts,
-  section: "contacts"
+  contacts: (JSON.parse(localStorage.getItem("ilsc-contacts") || "null") || seedContacts).map(normalizeContact),
+  section: "home"
 };
 
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
 
 function saveContacts(){
+  state.contacts = state.contacts.map(normalizeContact);
   localStorage.setItem("ilsc-contacts", JSON.stringify(state.contacts));
 }
 
@@ -304,7 +446,7 @@ function showApp(){
   $("#sidebarUserName").textContent = state.user;
   $("#sidebarAvatar").textContent = initials(state.user).slice(0,1);
   $("#topUser").textContent = state.user;
-  renderContacts();
+  switchSection(state.section || "home");
 }
 
 function showLogin(){
@@ -357,6 +499,7 @@ function renderContacts(){
       <td>${escapeHtml(c.type || "—")}</td>
       <td>${escapeHtml(c.country || "—")}</td>
       <td><span class="status status-${escapeHtml(c.status)}">${escapeHtml(c.status)}</span></td>
+      <td>${escapeHtml(c.stage || "—")}</td>
       <td><span class="owner-chip"><span class="owner-dot">${initials(c.owner).slice(0,1)}</span>${escapeHtml(c.owner || "—")}</span></td>
     </tr>
   `).join("");
@@ -396,29 +539,85 @@ $("#contactModal").addEventListener("keydown", e=>{ if(e.key === "Escape") close
 $("#contactForm").addEventListener("submit", e => {
   e.preventDefault();
   const fd = new FormData(e.currentTarget);
-  const contact = Object.fromEntries(fd.entries());
+  const contact = normalizeContact(Object.fromEntries(fd.entries()));
   state.contacts.unshift(contact);
   saveContacts();
   e.currentTarget.reset();
   closeModal();
+  renderHome();
   renderContacts();
 });
 
 ["#globalSearch", "#filterSearch"].forEach(sel => $(sel).addEventListener("input", renderContacts));
 $$('.countryFilter,.typeFilter,.statusFilter').forEach(el=>el.addEventListener("change", renderContacts));
 
-$$('.nav-item[data-section]').forEach(btn => btn.addEventListener("click", () => {
-  $$('.nav-item[data-section]').forEach(b=>b.classList.remove('is-active'));
-  btn.classList.add('is-active');
-  const section = btn.dataset.section;
+function splitTopBottom(items){
+  return {
+    top: items.filter((_, i) => i % 2 === 0),
+    bottom: items.filter((_, i) => i % 2 === 1)
+  };
+}
+
+function chipHtml(c, klass){
+  return `<div class="flow-chip ${klass}">
+    <strong>${escapeHtml(c.name)}</strong>
+    <span>${escapeHtml(c.organisation || c.type || "Project contact")}</span>
+  </div>`;
+}
+
+function renderLane(targetId, items, klass){
+  const lane = $(targetId);
+  if(!lane) return;
+  lane.innerHTML = items.length ? items.map(c => chipHtml(c, klass)).join("") : `<div class="flow-empty">No names here yet.</div>`;
+}
+
+function renderHome(){
+  const prospects = state.contacts.filter(c => c.stage === "Prospect");
+  const leads = state.contacts.filter(c => c.stage === "Lead");
+  const partners = state.contacts.filter(c => c.stage === "Partner");
+
+  $("#homeProspectCount").textContent = prospects.length;
+  $("#homeLeadCount").textContent = leads.length;
+  $("#homePartnerCount").textContent = partners.length;
+  $("#prospectStageCount").textContent = prospects.length;
+  $("#leadStageCount").textContent = leads.length;
+  $("#partnerStageCount").textContent = partners.length;
+
+  const p1 = splitTopBottom(prospects);
+  const p2 = splitTopBottom(leads);
+  const p3 = splitTopBottom(partners);
+
+  renderLane("#prospectLaneTop", p1.top, "is-prospect");
+  renderLane("#prospectLaneBottom", p1.bottom, "is-prospect");
+  renderLane("#leadLaneTop", p2.top, "is-lead");
+  renderLane("#leadLaneBottom", p2.bottom, "is-lead");
+  renderLane("#partnerLaneTop", p3.top, "is-partner");
+  renderLane("#partnerLaneBottom", p3.bottom, "is-partner");
+}
+
+function setActiveNav(section){
+  $$('.nav-item[data-section]').forEach(btn => btn.classList.toggle('is-active', btn.dataset.section === section));
+}
+
+function switchSection(section){
   state.section = section;
-  const title = btn.querySelector('span:nth-child(2)')?.textContent || 'Home';
+  setActiveNav(section);
+  const activeBtn = $(`.nav-item[data-section="${section}"]`);
+  const title = activeBtn?.querySelector('span:nth-child(2)')?.textContent || 'Home';
   $("#pageTitle").textContent = title;
+
   const contacts = section === 'contacts';
+  const home = section === 'home';
+  $("#homeSection").classList.toggle('is-hidden', !home);
   $("#contactsSection").classList.toggle('is-hidden', !contacts);
-  $("#placeholderSection").classList.toggle('is-hidden', contacts);
-  if(!contacts) $("#placeholderTitle").textContent = title;
-}));
+  $("#placeholderSection").classList.toggle('is-hidden', home || contacts);
+
+  if(home) renderHome();
+  if(contacts) renderContacts();
+  if(!home && !contacts) $("#placeholderTitle").textContent = title;
+}
+
+$$('.nav-item[data-section]').forEach(btn => btn.addEventListener("click", () => switchSection(btn.dataset.section)));
 
 if (state.user && USERS.includes(state.user)) showApp(); else showLogin();
 
