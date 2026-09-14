@@ -104,6 +104,80 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
 }
 
 
+/* ===== v4 CRM modules ===== */
+.home-section{padding:22px 22px 28px}
+.home-hero{padding:24px 28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#fffaf4,#f7eee3)}
+.home-hero h3{margin:5px 0 9px;font:400 38px/1 var(--serif);letter-spacing:-.04em}
+.home-hero p{margin:0;max-width:800px;color:#67605a;font-size:12px;line-height:1.65}
+.pipeline-shell{margin-top:18px;border:1px solid var(--line);border-radius:22px;background:#fff;padding:24px;overflow-x:auto}
+.pipeline-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:18px}
+.pipeline-head h4{margin:0;font:400 28px/1 var(--serif)}
+.pipeline-head p{margin:6px 0 0;color:#756e67;font-size:11px}
+.pipeline-track{position:relative;min-width:880px;height:430px}
+.pipeline-main-line{position:absolute;left:4%;right:4%;top:50%;height:7px;border-radius:999px;background:var(--ink);transform:translateY(-50%)}
+.pipeline-stage{position:absolute;top:0;bottom:0;width:31%;transform:translateX(-50%)}
+.pipeline-stage.s1{left:18%}.pipeline-stage.s2{left:50%}.pipeline-stage.s3{left:82%}
+.pipeline-stem{position:absolute;left:50%;top:22%;bottom:22%;width:7px;background:var(--ink);transform:translateX(-50%);border-radius:999px}
+.pipeline-stage.s1 .pipeline-stem{top:24%;bottom:38%}.pipeline-stage.s2 .pipeline-stem{top:18%;bottom:18%}.pipeline-stage.s3 .pipeline-stem{top:24%;bottom:38%}
+.pipeline-node{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-width:126px;padding:12px 16px;border:5px solid #fff;border-radius:16px;background:var(--cream);box-shadow:0 0 0 1px var(--line),0 8px 26px rgba(0,0,0,.06);text-align:center;z-index:3}
+.pipeline-node strong{display:block;font:400 24px/1 var(--serif)}.pipeline-node span{display:block;margin-top:5px;color:#77706a;font-size:9px}
+.pipeline-people{position:absolute;left:50%;width:100%;transform:translateX(-50%);display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pipeline-people.top{bottom:58%;padding-bottom:38px;align-content:flex-end}.pipeline-people.bottom{top:58%;padding-top:38px;align-content:flex-start}
+.person-chip{max-width:190px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:8px 10px;text-align:left;box-shadow:0 5px 14px rgba(0,0,0,.035);cursor:pointer}
+.person-chip:hover{border-color:rgba(166,83,56,.35);background:#fff8f2}.person-chip strong{display:block;font-size:10px}.person-chip span{display:block;margin-top:3px;color:#7b746e;font-size:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pipeline-caption{display:flex;gap:8px;flex-wrap:wrap}.pipeline-caption span{padding:6px 9px;border-radius:999px;background:#f4ece2;font-size:9px;font-weight:800}
+.work-section,.entity-section{padding:22px}
+.module-toolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:15px}.module-toolbar h3{margin:0;font:400 33px/1 var(--serif);letter-spacing:-.035em}.module-toolbar p{margin:7px 0 0;color:#77706a;font-size:11px}
+.module-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+.module-row{display:grid;grid-template-columns:minmax(220px,1.6fr) minmax(120px,.8fr) minmax(140px,1fr) minmax(120px,.8fr);gap:18px;align-items:center;padding:15px 18px;border-bottom:1px solid #eee7de;cursor:pointer}.module-row:last-child{border-bottom:0}.module-row:hover{background:#fffaf5}
+.module-main strong{display:block;font-size:11px}.module-main span,.module-meta{display:block;margin-top:4px;color:#77706a;font-size:9px;line-height:1.45}
+.module-badges{display:flex;gap:5px;flex-wrap:wrap}.mini-badge{display:inline-flex;align-items:center;padding:5px 8px;border-radius:999px;background:#f1e8dc;color:#5b554f;font-size:8px;font-weight:800}.mini-badge.me{background:#e5eee9;color:#2e4a3e}.mini-badge.everyone{background:#fae5dc;color:#a65338}
+.module-empty{padding:55px 22px;text-align:center;color:#776f68}.module-empty strong{display:block;font:400 27px var(--serif);color:var(--ink)}
+.sync-warning{margin:0 0 14px;padding:11px 13px;border:1px solid #ead9c9;border-radius:13px;background:#fff7ee;color:#785f4c;font-size:9px;line-height:1.5}
+.entity-table{width:100%;border-collapse:collapse}.entity-table th,.entity-table td{padding:13px 15px;border-bottom:1px solid #eee7de;text-align:left;font-size:10px}.entity-table th{background:#fffaf5;color:#756f69;font-size:9px}.entity-row{cursor:pointer}.entity-row:hover td{background:#fffaf5}
+.lead-list{display:grid;gap:8px;margin-top:8px}.lead-card{display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:8px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:12px;background:#fff}.lead-card input,.lead-card select{padding:9px 10px;font-size:10px}.icon-btn{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.check-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:10px;border:1px solid var(--line);border-radius:13px;background:#fffdf9}
+.check-grid label{display:flex!important;align-items:center;gap:7px!important;font-size:10px!important;text-transform:none!important;letter-spacing:0!important;color:#5d5751!important}.check-grid input{width:14px;height:14px;accent-color:var(--rust)}
+.drop-zone{min-height:150px;border:1.5px dashed rgba(166,83,56,.4);border-radius:18px;background:#fff8f2;display:grid;place-items:center;text-align:center;padding:24px;cursor:pointer}.drop-zone.is-over{background:#fae5dc;border-color:var(--rust)}.drop-zone strong{display:block;font:400 23px var(--serif)}.drop-zone span{display:block;margin-top:5px;color:#766e68;font-size:9px}.drop-zone input{display:none}
+.doc-row{cursor:default}.doc-actions{display:flex;gap:6px;justify-content:flex-end}.small-btn{min-height:31px;padding:0 10px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:8px;font-weight:800}.small-btn.danger{color:#9b3f2a}.scope-note{margin-top:8px;color:#8a827b;font-size:9px;line-height:1.4}.city-col{color:#625c56}
+@media(max-width:900px){.module-row{grid-template-columns:1fr}.check-grid{grid-template-columns:1fr 1fr}.lead-card{grid-template-columns:1fr 1fr}}
+
+/* clickable contact records */
+.contact-row{cursor:pointer;transition:background .15s}
+.contact-row:hover td{background:#fff8f1}
+.contact-row:focus{outline:2px solid rgba(166,83,56,.25);outline-offset:-2px}
+.contact-name-link{font-weight:800;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+.contact-row:hover .contact-name-link{color:var(--rust);border-bottom-color:rgba(166,83,56,.28)}
+
+/* contact record page */
+.record-modal-card{width:min(900px,96vw);padding:0;overflow:hidden}
+.record-cover{padding:27px 30px 24px;background:linear-gradient(135deg,var(--sage),var(--sage-2));color:#fff}
+.record-cover .eyebrow{color:#f5d3c5}
+.record-headline{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.record-identity{display:flex;align-items:center;gap:16px}
+.record-avatar{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:var(--peach);color:var(--ink);font:700 18px var(--serif)}
+.record-cover h3{margin:0;font:400 38px/1 var(--serif);letter-spacing:-.035em}
+.record-company{margin-top:6px;color:#d9e2dd;font-size:12px}
+.record-close{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;width:38px;height:38px;border-radius:50%;font-size:24px}
+.record-body{padding:26px 30px 30px;background:var(--paper)}
+.record-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.record-grid label{display:grid;gap:8px}
+.record-grid label>span{font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960}
+.record-grid .full{grid-column:1/-1}
+.record-section-title{margin:4px 0 2px;font:400 24px/1 var(--serif)}
+.record-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.record-actions-right{display:flex;gap:9px}
+.btn-danger{background:#fff;border-color:rgba(155,63,42,.28);color:#9b3f2a}
+.btn-danger:hover{background:#fff4ef}
+.record-link-preview{font-size:11px;color:var(--rust);text-decoration:none}
+.record-link-preview:hover{text-decoration:underline}
+@media(max-width:720px){
+  .record-grid{grid-template-columns:1fr}
+  .record-grid .full{grid-column:auto}
+  .record-cover,.record-body{padding-left:20px;padding-right:20px}
+  .record-cover h3{font-size:30px}
+}
+
 /* modal */
 .modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px}.modal-backdrop{position:absolute;inset:0;background:rgba(23,23,21,.62);backdrop-filter:blur(5px)}.modal-card{position:relative;width:min(680px,100%);max-height:90vh;overflow:auto;padding:27px;border-radius:24px;background:var(--paper);box-shadow:0 32px 100px rgba(0,0,0,.28)}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:22px}.modal-head h3{margin:0;font:400 38px/1 var(--serif)}.modal-close{border:0;background:transparent;font-size:28px;color:#7c756f}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-grid .full{grid-column:1/-1}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
 
@@ -164,17 +238,17 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
         <button class="nav-item" data-section="dashboard"><span class="nav-icon">◫</span><span>Dashboard</span></button>
         <div class="nav-label">RELATIONSHIPS</div>
         <button class="nav-item" data-section="contacts"><span class="nav-icon">◎</span><span>Contacts</span><span class="count-pill" id="contactsCount">0</span></button>
-        <button class="nav-item" data-section="organisations"><span class="nav-icon">▦</span><span>Organisations</span></button>
-        <button class="nav-item" data-section="schools"><span class="nav-icon">▤</span><span>Schools</span></button>
-        <button class="nav-item" data-section="partners"><span class="nav-icon">↔</span><span>Partners</span></button>
+        <button class="nav-item" data-section="organisations"><span class="nav-icon">▦</span><span>Organisations</span><span class="count-pill" id="organisationsCount">0</span></button>
+        <button class="nav-item" data-section="schools"><span class="nav-icon">▤</span><span>Schools</span><span class="count-pill" id="schoolsCount">0</span></button>
+        <button class="nav-item" data-section="partners"><span class="nav-icon">↔</span><span>Partners</span><span class="count-pill" id="partnersCount">0</span></button>
         <div class="nav-label">PIPELINE</div>
         <button class="nav-item" data-section="leads"><span class="nav-icon">◇</span><span>Leads</span></button>
         <button class="nav-item" data-section="opportunities"><span class="nav-icon">△</span><span>Opportunities</span></button>
         <button class="nav-item" data-section="camps"><span class="nav-icon">✦</span><span>Study Camps</span></button>
         <div class="nav-label">WORK</div>
-        <button class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span></button>
-        <button class="nav-item" data-section="meetings"><span class="nav-icon">◷</span><span>Meetings</span></button>
-        <button class="nav-item" data-section="documents"><span class="nav-icon">▱</span><span>Documents</span></button>
+        <button class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span><span class="count-pill" id="tasksCount">0</span></button>
+        <button class="nav-item" data-section="meetings"><span class="nav-icon">◷</span><span>Meetings</span><span class="count-pill" id="meetingsCount">0</span></button>
+        <button class="nav-item" data-section="documents"><span class="nav-icon">▱</span><span>Documents</span><span class="count-pill" id="documentsCount">0</span></button>
       </nav>
 
       <div class="sidebar-bottom">
@@ -199,88 +273,14 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
           <div class="top-user" id="topUser">Augustian</div>
         </div>
       </header>
-
-      
       <section id="homeSection" class="workspace-section home-section">
-        <div class="home-hero">
-          <p class="eyebrow">RELATIONSHIP FLOW OVERVIEW</p>
-          <h3>Who is moving with us?</h3>
-          <p>Home now shows a simple visual relationship journey for the Indonesia–Lapland Study Camp project: who is still a prospect, who has moved into a lead, and who is already a partner moving with us. This can be adjusted as you add more people and companies.</p>
-        </div>
-
-        <div class="home-summary">
-          <div class="summary-card">
-            <span class="k">Prospects</span>
-            <strong id="homeProspectCount">0</strong>
-            <span>Early-stage contacts and organisations not yet actively moving with us.</span>
-          </div>
-          <div class="summary-card">
-            <span class="k">Leads</span>
-            <strong id="homeLeadCount">0</strong>
-            <span>Warm relationships in motion and under active development.</span>
-          </div>
-          <div class="summary-card">
-            <span class="k">Partners</span>
-            <strong id="homePartnerCount">0</strong>
-            <span>People and companies already moving with us more directly.</span>
-          </div>
-        </div>
-
-        <div class="flow-board">
-          <div class="flow-board-head">
-            <div>
-              <p class="eyebrow">MOVEMENT CONCEPT</p>
-              <h4>Prospect → Lead → Partner</h4>
-              <p>Names below show real people and companies currently inside the project flow.</p>
-            </div>
-            <div class="flow-arrow">Project movement ↗</div>
-          </div>
-
-          <div class="flow-track">
-            <article class="flow-stage">
-              <div class="flow-lanes">
-                <div class="flow-lane" id="prospectLaneTop"></div>
-              </div>
-              <div class="flow-junction"></div>
-              <div class="flow-node">
-                <p class="eyebrow">Stage 01</p>
-                <h5>Prospect</h5>
-                <div class="stage-count"><span id="prospectStageCount">0</span> in this stage</div>
-              </div>
-              <div class="flow-lanes">
-                <div class="flow-lane" id="prospectLaneBottom"></div>
-              </div>
-            </article>
-
-            <article class="flow-stage">
-              <div class="flow-lanes">
-                <div class="flow-lane" id="leadLaneTop"></div>
-              </div>
-              <div class="flow-junction"></div>
-              <div class="flow-node">
-                <p class="eyebrow">Stage 02</p>
-                <h5>Lead</h5>
-                <div class="stage-count"><span id="leadStageCount">0</span> in this stage</div>
-              </div>
-              <div class="flow-lanes">
-                <div class="flow-lane" id="leadLaneBottom"></div>
-              </div>
-            </article>
-
-            <article class="flow-stage">
-              <div class="flow-lanes">
-                <div class="flow-lane" id="partnerLaneTop"></div>
-              </div>
-              <div class="flow-junction"></div>
-              <div class="flow-node">
-                <p class="eyebrow">Stage 03</p>
-                <h5>Partner</h5>
-                <div class="stage-count"><span id="partnerStageCount">0</span> in this stage</div>
-              </div>
-              <div class="flow-lanes">
-                <div class="flow-lane" id="partnerLaneBottom"></div>
-              </div>
-            </article>
+        <div class="home-hero"><p class="eyebrow">RELATIONSHIP MOVEMENT</p><h3>Who is moving with us?</h3><p>A simple live pipeline of the people and companies around the Indonesia–Lapland Study Camp: prospects move into active leads, then into partners.</p></div>
+        <div class="pipeline-shell">
+          <div class="pipeline-head"><div><h4>Prospect → Lead → Partner</h4><p>Click any name to open and edit the contact record.</p></div><div class="pipeline-caption"><span id="homeProspectCount">0 prospects</span><span id="homeLeadCount">0 leads</span><span id="homePartnerCount">0 partners</span></div></div>
+          <div class="pipeline-track"><div class="pipeline-main-line"></div>
+            <div class="pipeline-stage s1"><div class="pipeline-stem"></div><div class="pipeline-people top" id="prospectLaneTop"></div><div class="pipeline-node"><strong>Prospect</strong><span id="prospectStageCount">0 in this stage</span></div><div class="pipeline-people bottom" id="prospectLaneBottom"></div></div>
+            <div class="pipeline-stage s2"><div class="pipeline-stem"></div><div class="pipeline-people top" id="leadLaneTop"></div><div class="pipeline-node"><strong>Lead</strong><span id="leadStageCount">0 in this stage</span></div><div class="pipeline-people bottom" id="leadLaneBottom"></div></div>
+            <div class="pipeline-stage s3"><div class="pipeline-stem"></div><div class="pipeline-people top" id="partnerLaneTop"></div><div class="pipeline-node"><strong>Partner</strong><span id="partnerStageCount">0 in this stage</span></div><div class="pipeline-people bottom" id="partnerLaneBottom"></div></div>
           </div>
         </div>
       </section>
@@ -332,6 +332,7 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
                     <th>Contact Name</th>
                     <th>Organisation</th>
                     <th>Role / Type</th>
+                    <th>City</th>
                     <th>Country</th>
                     <th>Status</th>
                     <th>Stage</th>
@@ -350,6 +351,15 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
         </div>
       </section>
 
+
+      <section id="entitiesSection" class="workspace-section entity-section is-hidden">
+        <div class="module-toolbar"><div><p class="eyebrow">RELATIONSHIP DATABASE</p><h3 id="entitiesHeading">Schools</h3><p id="entitiesSubheading"></p></div><button id="createEntityBtn" class="btn btn-rust">Add record <span>＋</span></button></div>
+        <div class="module-card"><table class="entity-table"><thead><tr><th>Name</th><th>City</th><th>Country</th><th>Stage</th><th>Leads</th><th>Owner</th></tr></thead><tbody id="entitiesTableBody"></tbody></table><div id="entitiesEmpty" class="module-empty is-hidden"><strong>No records yet</strong><span>Add the first one with the button above.</span></div></div>
+      </section>
+      <section id="leadsSection" class="workspace-section work-section is-hidden"><div class="module-toolbar"><div><p class="eyebrow">PIPELINE</p><h3>Leads</h3><p>Contact leads plus people recorded inside schools, organisations and partners.</p></div></div><div id="leadsList" class="module-card"></div></section>
+      <section id="tasksSection" class="workspace-section work-section is-hidden"><div class="module-toolbar"><div><p class="eyebrow">SHARED WORK</p><h3>Tasks</h3><p>Assign tasks to yourself, another account, or several accounts.</p></div><button id="createTaskBtn" class="btn btn-rust">Create task <span>＋</span></button></div><div class="sync-warning">Visibility works between accounts using this browser data. Cross-device live sharing still needs a shared database backend.</div><div id="tasksList" class="module-card"></div></section>
+      <section id="meetingsSection" class="workspace-section work-section is-hidden"><div class="module-toolbar"><div><p class="eyebrow">SHARED CALENDAR</p><h3>Meetings</h3><p>Create meetings, choose attendees and choose who can see them.</p></div><button id="createMeetingBtn" class="btn btn-rust">Create meeting <span>＋</span></button></div><div class="sync-warning">Visibility works between accounts using this browser data. Cross-device live sharing still needs a shared database backend.</div><div id="meetingsList" class="module-card"></div></section>
+      <section id="documentsSection" class="workspace-section work-section is-hidden"><div class="module-toolbar"><div><p class="eyebrow">FILES</p><h3>Documents</h3><p>Drop a file, add context and choose whether everyone or selected accounts can see it.</p></div></div><div class="sync-warning">Files are stored in this browser only for now. Shared cloud storage is needed for secure cross-device file sharing.</div><label class="drop-zone" id="dropZone"><div><strong>Drop a file here</strong><span>or click to choose a file · prototype limit 1.5 MB</span></div><input id="documentFileInput" type="file" /></label><div style="height:14px"></div><div id="documentsList" class="module-card"></div></section>
       <section id="placeholderSection" class="workspace-section is-hidden">
         <div class="placeholder-card">
           <p class="eyebrow">MODULE READY FOR BUILD</p>
@@ -372,255 +382,178 @@ input,select,textarea{width:100%;border:1px solid rgba(23,23,21,.18);background:
           <label><span>Name *</span><input name="name" required /></label>
           <label><span>Organisation</span><input name="organisation" /></label>
           <label><span>Role / Type</span><select name="type"><option>Partner</option><option>School</option><option>Operator</option><option>Distributor</option><option>Public Sector</option><option>Other</option></select></label>
+          <label><span>City</span><input name="city" placeholder="Rovaniemi, Jakarta…" /></label>
           <label><span>Country</span><select name="country"><option>Finland</option><option>Indonesia</option><option>Sweden</option><option>Other</option></select></label>
           <label><span>Status</span><select name="status"><option>New</option><option>Warm</option><option>Active</option><option>Paused</option></select></label>
           <label><span>Stage</span><select name="stage"><option>Prospect</option><option>Lead</option><option>Partner</option></select></label>
           <label><span>Owner</span><select name="owner"><option>Bohdan</option><option>Peder</option><option>Sunny</option><option>Simon</option><option>Augustian</option><option>LinArctic</option></select></label>
-          <label class="full"><span>Email</span><input name="email" type="email" /></label>
-          <label class="full"><span>Notes</span><textarea name="notes" rows="4"></textarea></label>
+          <label><span>Phone</span><input name="phone" type="tel" placeholder="+358…" /></label>
+          <label><span>Email</span><input name="email" type="email" placeholder="name@company.com" /></label>
+          <label class="full"><span>Website / Page</span><input name="website" type="url" placeholder="https://…" /></label>
+          <label class="full"><span>Details / Notes</span><textarea name="notes" rows="5" placeholder="Relationship context, next step, important background…"></textarea></label>
         </div>
         <div class="modal-actions"><button type="button" class="btn btn-outline" data-close-modal>Cancel</button><button type="submit" class="btn btn-dark">Save Contact</button></div>
       </form>
     </div>
   </div>
 
+  <div id="recordModal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="recordModalTitle">
+    <div class="modal-backdrop" data-close-record></div>
+    <div class="modal-card record-modal-card">
+      <div class="record-cover">
+        <div class="record-headline">
+          <div class="record-identity">
+            <div class="record-avatar" id="recordAvatar">A</div>
+            <div>
+              <p class="eyebrow">CONTACT RECORD</p>
+              <h3 id="recordModalTitle">Contact</h3>
+              <div class="record-company" id="recordCompanyPreview">Organisation</div>
+            </div>
+          </div>
+          <button class="record-close" type="button" data-close-record aria-label="Close">×</button>
+        </div>
+      </div>
+      <form id="recordForm" class="record-body">
+        <input type="hidden" name="id" />
+        <h4 class="record-section-title">Contact details</h4>
+        <div class="record-grid">
+          <label><span>Name *</span><input name="name" required /></label>
+          <label><span>Company / Organisation</span><input name="organisation" /></label>
+          <label><span>Phone</span><input name="phone" type="tel" placeholder="+358…" /></label>
+          <label><span>Email</span><input name="email" type="email" /></label>
+          <label class="full"><span>Website / Page</span><input name="website" type="url" placeholder="https://…" /></label>
+
+          <label><span>Role / Type</span>
+            <select name="type">
+              <option>Partner</option><option>School</option><option>Operator</option>
+              <option>Distributor</option><option>Public Sector</option><option>Other</option>
+            </select>
+          </label>
+          <label><span>City</span><input name="city" placeholder="Rovaniemi, Jakarta…" /></label>
+          <label><span>Country</span>
+            <select name="country">
+              <option>Finland</option><option>Indonesia</option><option>Sweden</option><option>Other</option>
+            </select>
+          </label>
+
+          <label><span>Relationship Stage</span>
+            <select name="stage">
+              <option>Prospect</option><option>Lead</option><option>Partner</option>
+            </select>
+          </label>
+          <label><span>Activity Status</span>
+            <select name="status">
+              <option>New</option><option>Warm</option><option>Active</option><option>Paused</option>
+            </select>
+          </label>
+
+          <label><span>Owner</span>
+            <select name="owner">
+              <option>Bohdan</option><option>Peder</option><option>Sunny</option>
+              <option>Simon</option><option>Augustian</option><option>LinArctic</option>
+            </select>
+          </label>
+          <label><span>Website quick link</span><a id="recordWebsiteLink" class="record-link-preview" href="#" target="_blank" rel="noopener">No website added</a></label>
+
+          <label class="full"><span>Details / Notes</span><textarea name="notes" rows="7" placeholder="Relationship context, next step, meeting notes, responsibilities, agreements…"></textarea></label>
+        </div>
+
+        <div class="record-actions">
+          <button id="deleteRecordBtn" type="button" class="btn btn-danger">Delete contact</button>
+          <div class="record-actions-right">
+            <button type="button" class="btn btn-outline" data-close-record>Cancel</button>
+            <button type="submit" class="btn btn-dark">Save changes</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="entityModal" class="modal is-hidden" role="dialog" aria-modal="true"><div class="modal-backdrop" data-close-entity></div><div class="modal-card record-modal-card"><div class="record-cover"><div class="record-headline"><div class="record-identity"><div class="record-avatar" id="entityAvatar">S</div><div><p class="eyebrow" id="entityKindLabel">SCHOOL RECORD</p><h3 id="entityModalTitle">New School</h3><div class="record-company" id="entityCityPreview">Relationship record</div></div></div><button class="record-close" type="button" data-close-entity>×</button></div></div><form id="entityForm" class="record-body"><input type="hidden" name="id" /><input type="hidden" name="kind" /><div class="record-grid"><label><span>Name *</span><input name="name" required /></label><label><span>City</span><input name="city" /></label><label><span>Country</span><input name="country" /></label><label><span>Website</span><input name="website" type="url" /></label><label><span>Phone</span><input name="phone" /></label><label><span>Email</span><input name="email" type="email" /></label><label><span>Relationship Stage</span><select name="stage"><option>Prospect</option><option>Lead</option><option>Partner</option></select></label><label><span>Owner</span><select name="owner"><option>Bohdan</option><option>Peder</option><option>Sunny</option><option>Simon</option><option>Augustian</option><option>LinArctic</option></select></label><label class="full"><span>Details / Notes</span><textarea name="notes" rows="5"></textarea></label><div class="full"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Leads within this record</span><button type="button" id="addEntityLeadBtn" class="small-btn">＋ Add lead</button></div><div id="entityLeadsEditor" class="lead-list"></div></div></div><div class="record-actions"><button id="deleteEntityBtn" type="button" class="btn btn-danger">Delete record</button><div class="record-actions-right"><button type="button" class="btn btn-outline" data-close-entity>Cancel</button><button type="submit" class="btn btn-dark">Save changes</button></div></div></form></div></div>
+  <div id="taskModal" class="modal is-hidden" role="dialog" aria-modal="true"><div class="modal-backdrop" data-close-task></div><div class="modal-card"><div class="modal-head"><div><p class="eyebrow">TASK</p><h3 id="taskModalTitle">Create Task</h3></div><button class="modal-close" data-close-task>×</button></div><form id="taskForm"><input type="hidden" name="id" /><div class="form-grid"><label class="full"><span>Task *</span><input name="title" required /></label><label><span>Due</span><input name="due" type="datetime-local" /></label><label><span>Priority</span><select name="priority"><option>Normal</option><option>High</option><option>Urgent</option></select></label><label><span>Status</span><select name="status"><option>Open</option><option>In progress</option><option>Done</option></select></label><label class="full"><span>Details</span><textarea name="details" rows="4"></textarea></label><div class="full"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Assign to</span><div class="check-grid" id="taskAssignees"></div></div><div class="full"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Visible to</span><div class="check-grid" id="taskVisibility"></div><div class="scope-note">Choose Everyone, one account, or several accounts.</div></div></div><div class="modal-actions"><button id="deleteTaskBtn" type="button" class="btn btn-danger">Delete</button><button type="button" class="btn btn-outline" data-close-task>Cancel</button><button class="btn btn-dark" type="submit">Save task</button></div></form></div></div>
+  <div id="meetingModal" class="modal is-hidden" role="dialog" aria-modal="true"><div class="modal-backdrop" data-close-meeting></div><div class="modal-card"><div class="modal-head"><div><p class="eyebrow">MEETING</p><h3 id="meetingModalTitle">Create Meeting</h3></div><button class="modal-close" data-close-meeting>×</button></div><form id="meetingForm"><input type="hidden" name="id" /><div class="form-grid"><label class="full"><span>Meeting *</span><input name="title" required /></label><label><span>Date & time</span><input name="datetime" type="datetime-local" /></label><label><span>Location / City</span><input name="location" /></label><label class="full"><span>Meeting link</span><input name="link" type="url" /></label><label class="full"><span>Agenda / Notes</span><textarea name="details" rows="4"></textarea></label><div class="full"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Attendees</span><div class="check-grid" id="meetingAttendees"></div></div><div class="full"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Visible to</span><div class="check-grid" id="meetingVisibility"></div></div></div><div class="modal-actions"><button id="deleteMeetingBtn" type="button" class="btn btn-danger">Delete</button><button type="button" class="btn btn-outline" data-close-meeting>Cancel</button><button class="btn btn-dark" type="submit">Save meeting</button></div></form></div></div>
+  <div id="documentModal" class="modal is-hidden" role="dialog" aria-modal="true"><div class="modal-backdrop" data-close-document></div><div class="modal-card"><div class="modal-head"><div><p class="eyebrow">DOCUMENT</p><h3>Add Document</h3></div><button class="modal-close" data-close-document>×</button></div><form id="documentForm"><div class="form-grid"><label class="full"><span>Title *</span><input name="title" required /></label><label class="full"><span>Description</span><textarea name="description" rows="4"></textarea></label><div class="full"><span style="font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#716960">Visible to</span><div class="check-grid" id="documentVisibility"></div></div><div class="full" id="documentFileMeta" style="font-size:10px;color:#746d67"></div></div><div class="modal-actions"><button type="button" class="btn btn-outline" data-close-document>Cancel</button><button class="btn btn-dark" type="submit">Save document</button></div></form></div></div>
+
   <script>
-const USERS = ["Bohdan", "Peder", "Sunny", "Simon", "Augustian", "LinArctic"];
-// Static GitHub Pages authentication is only a front-end gate, not strong security.
-const PASSWORD_SHA256 = "c0711608bf82362679daff675fc1dc856900b17154ac4b90d2937429b9f5c5d1";
-
-async function sha256(value){
-  const bytes = new TextEncoder().encode(value);
-  const hash = await crypto.subtle.digest("SHA-256", bytes);
-  return [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2,"0")).join("");
-}
-
-const seedContacts = [
-  {name:"Pirkko Sivonen", organisation:"Rovaniemi international visits", type:"Public Sector", country:"Finland", status:"New", stage:"Prospect", owner:"Augustian", email:"", notes:"Relevant institutional contact in Rovaniemi."},
-  {name:"International House Rovaniemi", organisation:"International House", type:"Public Sector", country:"Finland", status:"New", stage:"Prospect", owner:"Augustian", email:"", notes:"Interest shown; communication can continue."},
-  {name:"Ariel Malada", organisation:"Indonesian community / festival network", type:"Partner", country:"Finland", status:"Warm", stage:"Lead", owner:"Augustian", email:"", notes:"Promised to support with letter of interest."},
-  {name:"Abbas", organisation:"Royal Lapland", type:"Operator", country:"Finland", status:"Warm", stage:"Lead", owner:"Augustian", email:"", notes:"Warm operational contact."},
-  {name:"Junaldi Ihsan (Sunny)", organisation:"Indonesia field network", type:"Partner", country:"Indonesia", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Indonesia-side operational bridge."},
-  {name:"Peder", organisation:"Destination Indonesia AB", type:"Partner", country:"Sweden", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Important aviation/ticketing comparison partner."},
-  {name:"Simon", organisation:"Europe Stay Edit Oy", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Core team member."},
-  {name:"Jakub Wargin", organisation:"Lapland Escape", type:"Operator", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Local operational partner."},
-  {name:"Robin", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Active project stakeholder."},
-  {name:"Evita", organisation:"Study Camp network", type:"Partner", country:"Finland", status:"Active", stage:"Partner", owner:"Augustian", email:"", notes:"Active project stakeholder."}
-];
-
-function normalizeContact(contact){
-  const c = {...contact};
-  if(!c.stage){
-    if(c.type === "Partner" || c.type === "Operator"){
-      c.stage = c.status === "Warm" || c.status === "New" ? "Lead" : "Partner";
-    } else if(c.status === "Warm" || c.status === "Active"){
-      c.stage = "Lead";
-    } else {
-      c.stage = "Prospect";
-    }
-  }
-  return c;
-}
-
-let state = {
-  user: sessionStorage.getItem("ilsc-user") || "",
-  contacts: (JSON.parse(localStorage.getItem("ilsc-contacts") || "null") || seedContacts).map(normalizeContact),
-  section: "home"
-};
-
-const $ = (s) => document.querySelector(s);
-const $$ = (s) => [...document.querySelectorAll(s)];
-
-function saveContacts(){
-  state.contacts = state.contacts.map(normalizeContact);
-  localStorage.setItem("ilsc-contacts", JSON.stringify(state.contacts));
-}
-
-function initials(name){
-  return (name || "?").replace(/[^A-Za-zÀ-ÿ ]/g, "").split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join("").toUpperCase() || "?";
-}
-
-function showApp(){
-  $("#loginView").classList.add("is-hidden");
-  $("#appView").classList.remove("is-hidden");
-  $("#sidebarUserName").textContent = state.user;
-  $("#sidebarAvatar").textContent = initials(state.user).slice(0,1);
-  $("#topUser").textContent = state.user;
-  switchSection(state.section || "home");
-}
-
-function showLogin(){
-  $("#appView").classList.add("is-hidden");
-  $("#loginView").classList.remove("is-hidden");
-  $("#loginPassword").value = "";
-}
-
-async function login(user, password){
-  const passwordHash = await sha256(password);
-  if (!USERS.includes(user) || passwordHash !== PASSWORD_SHA256) return false;
-  state.user = user;
-  sessionStorage.setItem("ilsc-user", user);
-  showApp();
-  return true;
-}
-
-function logout(){
-  sessionStorage.removeItem("ilsc-user");
-  state.user = "";
-  showLogin();
-}
-
-function getSelectedFilters(selector){
-  return $$(selector).filter(el=>el.checked).map(el=>el.value);
-}
-
-function filteredContacts(){
-  const q = ($("#globalSearch").value + " " + $("#filterSearch").value).trim().toLowerCase();
-  const countries = getSelectedFilters(".countryFilter");
-  const types = getSelectedFilters(".typeFilter");
-  const statuses = getSelectedFilters(".statusFilter");
-  return state.contacts.filter(c => {
-    const hay = Object.values(c).join(" ").toLowerCase();
-    return (!q || hay.includes(q)) &&
-      (!countries.length || countries.includes(c.country)) &&
-      (!types.length || types.includes(c.type)) &&
-      (!statuses.length || statuses.includes(c.status));
-  });
-}
-
-function renderContacts(){
-  const rows = filteredContacts();
-  const tbody = $("#contactsTableBody");
-  tbody.innerHTML = rows.map((c) => `
-    <tr>
-      <td class="check-col"><input type="checkbox" aria-label="Select ${escapeHtml(c.name)}"></td>
-      <td><span class="contact-name">${escapeHtml(c.name)}</span>${c.email ? `<div class="subtle">${escapeHtml(c.email)}</div>` : ""}</td>
-      <td>${escapeHtml(c.organisation || "—")}</td>
-      <td>${escapeHtml(c.type || "—")}</td>
-      <td>${escapeHtml(c.country || "—")}</td>
-      <td><span class="status status-${escapeHtml(c.status)}">${escapeHtml(c.status)}</span></td>
-      <td>${escapeHtml(c.stage || "—")}</td>
-      <td><span class="owner-chip"><span class="owner-dot">${initials(c.owner).slice(0,1)}</span>${escapeHtml(c.owner || "—")}</span></td>
-    </tr>
-  `).join("");
-  $("#contactsCount").textContent = state.contacts.length;
-  $("#visibleCount").textContent = rows.length;
-  $("#emptyState").classList.toggle("is-hidden", rows.length !== 0);
-}
-
-function escapeHtml(str=""){
-  return String(str).replace(/[&<>'"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[ch]));
-}
-
-function openModal(){
-  $("#contactModal").classList.remove("is-hidden");
-  document.body.style.overflow = "hidden";
-  const owner = $("#contactForm select[name=owner]");
-  if (USERS.includes(state.user)) owner.value = state.user;
-  setTimeout(()=>$("#contactForm input[name=name]").focus(),30);
-}
-
-function closeModal(){
-  $("#contactModal").classList.add("is-hidden");
-  document.body.style.overflow = "";
-}
-
-$("#loginForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  const ok = await login($("#loginUser").value, $("#loginPassword").value);
-  $("#loginError").textContent = ok ? "" : "Incorrect user or password.";
-});
-
-$("#logoutBtn").addEventListener("click", logout);
-$("#createContactBtn").addEventListener("click", openModal);
-$$('[data-close-modal]').forEach(el=>el.addEventListener("click", closeModal));
-$("#contactModal").addEventListener("keydown", e=>{ if(e.key === "Escape") closeModal(); });
-
-$("#contactForm").addEventListener("submit", e => {
-  e.preventDefault();
-  const fd = new FormData(e.currentTarget);
-  const contact = normalizeContact(Object.fromEntries(fd.entries()));
-  state.contacts.unshift(contact);
-  saveContacts();
-  e.currentTarget.reset();
-  closeModal();
-  renderHome();
-  renderContacts();
-});
-
-["#globalSearch", "#filterSearch"].forEach(sel => $(sel).addEventListener("input", renderContacts));
-$$('.countryFilter,.typeFilter,.statusFilter').forEach(el=>el.addEventListener("change", renderContacts));
-
-function splitTopBottom(items){
-  return {
-    top: items.filter((_, i) => i % 2 === 0),
-    bottom: items.filter((_, i) => i % 2 === 1)
-  };
-}
-
-function chipHtml(c, klass){
-  return `<div class="flow-chip ${klass}">
-    <strong>${escapeHtml(c.name)}</strong>
-    <span>${escapeHtml(c.organisation || c.type || "Project contact")}</span>
-  </div>`;
-}
-
-function renderLane(targetId, items, klass){
-  const lane = $(targetId);
-  if(!lane) return;
-  lane.innerHTML = items.length ? items.map(c => chipHtml(c, klass)).join("") : `<div class="flow-empty">No names here yet.</div>`;
-}
-
-function renderHome(){
-  const prospects = state.contacts.filter(c => c.stage === "Prospect");
-  const leads = state.contacts.filter(c => c.stage === "Lead");
-  const partners = state.contacts.filter(c => c.stage === "Partner");
-
-  $("#homeProspectCount").textContent = prospects.length;
-  $("#homeLeadCount").textContent = leads.length;
-  $("#homePartnerCount").textContent = partners.length;
-  $("#prospectStageCount").textContent = prospects.length;
-  $("#leadStageCount").textContent = leads.length;
-  $("#partnerStageCount").textContent = partners.length;
-
-  const p1 = splitTopBottom(prospects);
-  const p2 = splitTopBottom(leads);
-  const p3 = splitTopBottom(partners);
-
-  renderLane("#prospectLaneTop", p1.top, "is-prospect");
-  renderLane("#prospectLaneBottom", p1.bottom, "is-prospect");
-  renderLane("#leadLaneTop", p2.top, "is-lead");
-  renderLane("#leadLaneBottom", p2.bottom, "is-lead");
-  renderLane("#partnerLaneTop", p3.top, "is-partner");
-  renderLane("#partnerLaneBottom", p3.bottom, "is-partner");
-}
-
-function setActiveNav(section){
-  $$('.nav-item[data-section]').forEach(btn => btn.classList.toggle('is-active', btn.dataset.section === section));
-}
-
-function switchSection(section){
-  state.section = section;
-  setActiveNav(section);
-  const activeBtn = $(`.nav-item[data-section="${section}"]`);
-  const title = activeBtn?.querySelector('span:nth-child(2)')?.textContent || 'Home';
-  $("#pageTitle").textContent = title;
-
-  const contacts = section === 'contacts';
-  const home = section === 'home';
-  $("#homeSection").classList.toggle('is-hidden', !home);
-  $("#contactsSection").classList.toggle('is-hidden', !contacts);
-  $("#placeholderSection").classList.toggle('is-hidden', home || contacts);
-
-  if(home) renderHome();
-  if(contacts) renderContacts();
-  if(!home && !contacts) $("#placeholderTitle").textContent = title;
-}
-
-$$('.nav-item[data-section]').forEach(btn => btn.addEventListener("click", () => switchSection(btn.dataset.section)));
-
-if (state.user && USERS.includes(state.user)) showApp(); else showLogin();
-
+const USERS=["Bohdan","Peder","Sunny","Simon","Augustian","LinArctic"];
+const PASSWORD_SHA256="c0711608bf82362679daff675fc1dc856900b17154ac4b90d2937429b9f5c5d1";
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+async function sha256(v){const b=new TextEncoder().encode(v),h=await crypto.subtle.digest("SHA-256",b);return[...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function uid(p="r"){return crypto.randomUUID?crypto.randomUUID():p+"-"+Date.now()+"-"+Math.random().toString(16).slice(2)}
+function readJSON(k,f){try{const v=JSON.parse(localStorage.getItem(k)||"null");return v??f}catch(e){return f}}
+function writeJSON(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function escapeHtml(s=""){return String(s).replace(/[&<>'"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]))}
+function initials(n){return(n||"?").replace(/[^A-Za-zÀ-ÿ ]/g,"").split(/\s+/).filter(Boolean).slice(0,2).map(x=>x[0]).join("").toUpperCase()||"?"}
+function formatDate(v){if(!v)return"No date";const d=new Date(v);return isNaN(d)?v:d.toLocaleString()}
+const seedContacts=[
+{name:"Pirkko Sivonen",organisation:"Rovaniemi international visits",city:"Rovaniemi",type:"Public Sector",country:"Finland",status:"New",stage:"Prospect",owner:"Augustian",phone:"",email:"",website:"",notes:"Relevant institutional contact in Rovaniemi."},
+{name:"International House Rovaniemi",organisation:"International House",city:"Rovaniemi",type:"Public Sector",country:"Finland",status:"New",stage:"Prospect",owner:"Augustian",phone:"",email:"",website:"",notes:"Interest shown; communication can continue."},
+{name:"Ariel Malada",organisation:"Indonesian community / festival network",city:"",type:"Partner",country:"Finland",status:"Warm",stage:"Lead",owner:"Augustian",phone:"",email:"",website:"",notes:"Promised to support with letter of interest."},
+{name:"Abbas",organisation:"Royal Lapland",city:"Rovaniemi",type:"Operator",country:"Finland",status:"Warm",stage:"Lead",owner:"Augustian",phone:"",email:"",website:"",notes:"Warm operational contact."},
+{name:"Junaldi Ihsan (Sunny)",organisation:"Indonesia field network",city:"Padang",type:"Partner",country:"Indonesia",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Indonesia-side operational bridge."},
+{name:"Peder",organisation:"Destination Indonesia AB",city:"",type:"Partner",country:"Sweden",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Important aviation/ticketing comparison partner."},
+{name:"Simon",organisation:"Europe Stay Edit Oy",city:"",type:"Partner",country:"Finland",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Core team member."},
+{name:"Jakub Wargin",organisation:"Lapland Escape",city:"Rovaniemi",type:"Operator",country:"Finland",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Local operational partner."},
+{name:"Robin",organisation:"Study Camp network",city:"",type:"Partner",country:"Finland",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Active project stakeholder."},
+{name:"Evita",organisation:"Study Camp network",city:"",type:"Partner",country:"Finland",status:"Active",stage:"Partner",owner:"Augustian",phone:"",email:"",website:"",notes:"Active project stakeholder."}];
+function nc(c){c={...c};if(!c.id)c.id=uid("c");if(!c.stage)c.stage=c.status==="Active"?"Partner":c.status==="Warm"?"Lead":"Prospect";for(const k of["city","phone","email","website","notes"])c[k]=c[k]||"";c.owner=c.owner||"Augustian";c.status=c.status||"New";c.country=c.country||"Other";c.type=c.type||"Other";return c}
+const seedEntities=[
+{kind:"School",name:"Jakarta Intercultural School",city:"Jakarta",country:"Indonesia",stage:"Prospect",owner:"Augustian",notes:"Relevant potential school relationship.",leads:[]},
+{kind:"Organisation",name:"International House Rovaniemi",city:"Rovaniemi",country:"Finland",stage:"Prospect",owner:"Augustian",notes:"Interest shown in the concept.",leads:[]},
+{kind:"Organisation",name:"Royal Lapland",city:"Rovaniemi",country:"Finland",stage:"Lead",owner:"Augustian",notes:"Operational relationship under development.",leads:[{name:"Abbas",stage:"Lead"}]},
+{kind:"Partner",name:"Lapland Escape",city:"Rovaniemi",country:"Finland",stage:"Partner",owner:"Augustian",notes:"Local operational partner.",leads:[{name:"Jakub Wargin",role:"Owner",stage:"Partner"}]},
+{kind:"Partner",name:"Destination Indonesia AB",city:"",country:"Sweden",stage:"Partner",owner:"Augustian",notes:"Aviation/ticketing comparison and relationship.",leads:[{name:"Peder",stage:"Partner"}]},
+{kind:"Partner",name:"Europe Stay Edit Oy",city:"",country:"Finland",stage:"Partner",owner:"Augustian",notes:"Core project company.",leads:[{name:"Simon",stage:"Partner"}]}];
+function nl(l){l={...l};if(!l.id)l.id=uid("l");for(const k of["name","role","email","phone"])l[k]=l[k]||"";l.stage=l.stage||"Lead";return l}
+function ne(e){e={...e};if(!e.id)e.id=uid("e");for(const k of["name","city","country","website","phone","email","notes"])e[k]=e[k]||"";e.kind=e.kind||"Organisation";e.stage=e.stage||"Prospect";e.owner=e.owner||"Augustian";e.leads=(e.leads||[]).map(nl);return e}
+function nt(t){t={...t};if(!t.id)t.id=uid("t");t.title=t.title||"";t.details=t.details||"";t.due=t.due||"";t.priority=t.priority||"Normal";t.status=t.status||"Open";t.assignees=t.assignees||[];t.visibleTo=t.visibleTo?.length?t.visibleTo:[t.createdBy||"Augustian"];t.createdBy=t.createdBy||"Augustian";return t}
+function nm(m){m={...m};if(!m.id)m.id=uid("m");for(const k of["title","details","datetime","location","link"])m[k]=m[k]||"";m.attendees=m.attendees||[];m.visibleTo=m.visibleTo?.length?m.visibleTo:[m.createdBy||"Augustian"];m.createdBy=m.createdBy||"Augustian";return m}
+function nd(d){d={...d};if(!d.id)d.id=uid("d");d.title=d.title||d.name||"Document";d.description=d.description||"";d.visibleTo=d.visibleTo?.length?d.visibleTo:[d.uploadedBy||"Augustian"];d.uploadedBy=d.uploadedBy||"Augustian";d.createdAt=d.createdAt||new Date().toISOString();return d}
+let state={user:sessionStorage.getItem("ilsc-user")||"",section:sessionStorage.getItem("ilsc-section")||"home",contacts:readJSON("ilsc-contacts",seedContacts).map(nc),entities:readJSON("ilsc-entities",seedEntities).map(ne),tasks:readJSON("ilsc-tasks",[]).map(nt),meetings:readJSON("ilsc-meetings",[]).map(nm),documents:readJSON("ilsc-documents",[]).map(nd),entityKind:"School",pendingDocument:null};
+function persist(){writeJSON("ilsc-contacts",state.contacts);writeJSON("ilsc-entities",state.entities);writeJSON("ilsc-tasks",state.tasks);writeJSON("ilsc-meetings",state.meetings);writeJSON("ilsc-documents",state.documents)}persist();
+function visible(i){return(i.visibleTo||[]).includes("Everyone")||(i.visibleTo||[]).includes(state.user)}
+function counts(){$("#contactsCount").textContent=state.contacts.length;$("#schoolsCount").textContent=state.entities.filter(e=>e.kind==="School").length;$("#organisationsCount").textContent=state.entities.filter(e=>e.kind==="Organisation").length;$("#partnersCount").textContent=state.entities.filter(e=>e.kind==="Partner").length;$("#tasksCount").textContent=state.tasks.filter(visible).length;$("#meetingsCount").textContent=state.meetings.filter(visible).length;$("#documentsCount").textContent=state.documents.filter(visible).length}
+function showApp(){$("#loginView").classList.add("is-hidden");$("#appView").classList.remove("is-hidden");$("#sidebarUserName").textContent=state.user;$("#sidebarAvatar").textContent=initials(state.user).slice(0,1);$("#topUser").textContent=state.user;switchSection(state.section);counts()}
+function showLogin(){$("#appView").classList.add("is-hidden");$("#loginView").classList.remove("is-hidden");$("#loginPassword").value=""}
+async function login(u,p){if(!USERS.includes(u)||(await sha256(p))!==PASSWORD_SHA256)return false;state.user=u;sessionStorage.setItem("ilsc-user",u);showApp();return true}
+function logout(){sessionStorage.removeItem("ilsc-user");state.user="";showLogin()}
+function selFilt(s){return $$(s).filter(x=>x.checked).map(x=>x.value)}
+function filteredContacts(){const q=((($("#globalSearch")?.value)||"")+" "+(($("#filterSearch")?.value)||"")).trim().toLowerCase(),co=selFilt(".countryFilter"),ty=selFilt(".typeFilter"),st=selFilt(".statusFilter");return state.contacts.filter(c=>{const h=Object.values(c).join(" ").toLowerCase();return(!q||h.includes(q))&&(!co.length||co.includes(c.country))&&(!ty.length||ty.includes(c.type))&&(!st.length||st.includes(c.status))})}
+function renderContacts(){const rows=filteredContacts();$("#contactsTableBody").innerHTML=rows.map(c=>`<tr class="contact-row" data-contact-id="${escapeHtml(c.id)}"><td class="check-col"><input type="checkbox" data-row-control></td><td><span class="contact-name-link">${escapeHtml(c.name)}</span>${c.email?`<div class="subtle">${escapeHtml(c.email)}</div>`:""}</td><td>${escapeHtml(c.organisation||"—")}</td><td>${escapeHtml(c.type||"—")}</td><td class="city-col">${escapeHtml(c.city||"—")}</td><td>${escapeHtml(c.country||"—")}</td><td><span class="status status-${escapeHtml(c.status)}">${escapeHtml(c.status)}</span></td><td>${escapeHtml(c.stage||"—")}</td><td>${escapeHtml(c.owner||"—")}</td></tr>`).join("");$("#visibleCount").textContent=rows.length;$("#emptyState").classList.toggle("is-hidden",rows.length!==0);counts()}
+function split(a){return{top:a.filter((_,i)=>i%2===0),bottom:a.filter((_,i)=>i%2===1)}}function chip(c){return`<button type="button" class="person-chip" data-contact-id="${escapeHtml(c.id)}"><strong>${escapeHtml(c.name)}</strong><span>${escapeHtml(c.organisation||c.city||c.type||"Project contact")}</span></button>`}function lane(id,a){$(id).innerHTML=a.map(chip).join("")}
+function renderHome(){const p=state.contacts.filter(c=>c.stage==="Prospect"),l=state.contacts.filter(c=>c.stage==="Lead"),r=state.contacts.filter(c=>c.stage==="Partner");$("#homeProspectCount").textContent=`${p.length} prospect${p.length===1?"":"s"}`;$("#homeLeadCount").textContent=`${l.length} lead${l.length===1?"":"s"}`;$("#homePartnerCount").textContent=`${r.length} partner${r.length===1?"":"s"}`;$("#prospectStageCount").textContent=`${p.length} in this stage`;$("#leadStageCount").textContent=`${l.length} in this stage`;$("#partnerStageCount").textContent=`${r.length} in this stage`;const a=split(p),b=split(l),c=split(r);lane("#prospectLaneTop",a.top);lane("#prospectLaneBottom",a.bottom);lane("#leadLaneTop",b.top);lane("#leadLaneBottom",b.bottom);lane("#partnerLaneTop",c.top);lane("#partnerLaneBottom",c.bottom)}
+function ek(s){return s==="schools"?"School":s==="partners"?"Partner":"Organisation"}
+function renderEntities(){const k=state.entityKind,rows=state.entities.filter(e=>e.kind===k);$("#entitiesHeading").textContent=k==="School"?"Schools":k==="Partner"?"Partners":"Organisations";$("#entitiesSubheading").textContent=k==="School"?"Add schools, edit school information and keep school-specific leads inside each record.":k==="Partner"?"Keep partner company details and partner-specific people/leads together.":"Keep organisation details and organisation-specific people/leads together.";$("#createEntityBtn").innerHTML=`Add ${k.toLowerCase()} <span>＋</span>`;$("#entitiesTableBody").innerHTML=rows.map(e=>`<tr class="entity-row" data-entity-id="${escapeHtml(e.id)}"><td><strong>${escapeHtml(e.name)}</strong></td><td>${escapeHtml(e.city||"—")}</td><td>${escapeHtml(e.country||"—")}</td><td>${escapeHtml(e.stage)}</td><td>${e.leads.length}</td><td>${escapeHtml(e.owner)}</td></tr>`).join("");$("#entitiesEmpty").classList.toggle("is-hidden",rows.length!==0);counts()}
+function renderLeads(){const a=state.contacts.filter(c=>c.stage==="Lead").map(c=>({name:c.name,context:c.organisation||"Contact",email:c.email,phone:c.phone,source:"Contact"})),b=state.entities.flatMap(e=>(e.leads||[]).filter(l=>l.stage==="Lead"||l.stage==="Prospect").map(l=>({name:l.name,context:`${e.name} · ${e.kind}`,email:l.email,phone:l.phone,source:e.kind}))),all=[...a,...b];$("#leadsList").innerHTML=all.length?all.map(l=>`<div class="module-row"><div class="module-main"><strong>${escapeHtml(l.name||"Unnamed lead")}</strong><span>${escapeHtml(l.context)}</span></div><div class="module-meta">${escapeHtml(l.email||"No email")}</div><div class="module-meta">${escapeHtml(l.phone||"No phone")}</div><div class="module-badges"><span class="mini-badge">${escapeHtml(l.source)}</span></div></div>`).join(""):`<div class="module-empty"><strong>No leads yet</strong><span>Add or move a person into Lead.</span></div>`}
+function badges(a){return(a||[]).map(v=>`<span class="mini-badge ${v==="Everyone"?"everyone":v===state.user?"me":""}">${escapeHtml(v)}</span>`).join("")}
+function renderTasks(){const a=state.tasks.filter(visible);$("#tasksList").innerHTML=a.length?a.map(t=>`<div class="module-row" data-task-id="${escapeHtml(t.id)}"><div class="module-main"><strong>${escapeHtml(t.title)}</strong><span>${escapeHtml(t.details||"No details")}</span></div><div><div class="module-meta">${formatDate(t.due)}</div><div class="module-meta">${escapeHtml(t.priority)} · ${escapeHtml(t.status)}</div></div><div class="module-badges">${badges(t.assignees)}</div><div class="module-badges">${badges(t.visibleTo)}</div></div>`).join(""):`<div class="module-empty"><strong>No visible tasks</strong><span>Create one and assign it to any account.</span></div>`;counts()}
+function renderMeetings(){const a=state.meetings.filter(visible);$("#meetingsList").innerHTML=a.length?a.map(m=>`<div class="module-row" data-meeting-id="${escapeHtml(m.id)}"><div class="module-main"><strong>${escapeHtml(m.title)}</strong><span>${escapeHtml(m.details||"No agenda")}</span></div><div><div class="module-meta">${formatDate(m.datetime)}</div><div class="module-meta">${escapeHtml(m.location||"No location")}</div></div><div class="module-badges">${badges(m.attendees)}</div><div class="module-badges">${badges(m.visibleTo)}</div></div>`).join(""):`<div class="module-empty"><strong>No visible meetings</strong><span>Create a meeting and choose who can see it.</span></div>`;counts()}
+function renderDocuments(){const a=state.documents.filter(visible);$("#documentsList").innerHTML=a.length?a.map(d=>`<div class="module-row doc-row"><div class="module-main"><strong>${escapeHtml(d.title)}</strong><span>${escapeHtml(d.name||"File")} · ${Math.round((d.size||0)/1024)} KB</span></div><div class="module-meta">${escapeHtml(d.description||"No description")}</div><div class="module-badges">${badges(d.visibleTo)}</div><div class="doc-actions">${d.dataUrl?`<button class="small-btn" data-download-doc="${escapeHtml(d.id)}">Download</button>`:""}<button class="small-btn danger" data-delete-doc="${escapeHtml(d.id)}">Delete</button></div></div>`).join(""):`<div class="module-empty"><strong>No visible documents</strong><span>Drop a file above to add one.</span></div>`;counts()}
+function hideAll(){["homeSection","contactsSection","entitiesSection","leadsSection","tasksSection","meetingsSection","documentsSection","placeholderSection"].forEach(id=>$("#"+id)?.classList.add("is-hidden"))}
+function switchSection(s){state.section=s;sessionStorage.setItem("ilsc-section",s);$$('.nav-item[data-section]').forEach(b=>b.classList.toggle("is-active",b.dataset.section===s));hideAll();$("#pageTitle").textContent=$(`.nav-item[data-section="${s}"] span:nth-child(2)`)?.textContent||"Home";if(s==="home"){$("#homeSection").classList.remove("is-hidden");renderHome()}else if(s==="contacts"){$("#contactsSection").classList.remove("is-hidden");renderContacts()}else if(["schools","organisations","partners"].includes(s)){state.entityKind=ek(s);$("#entitiesSection").classList.remove("is-hidden");renderEntities()}else if(s==="leads"){$("#leadsSection").classList.remove("is-hidden");renderLeads()}else if(s==="tasks"){$("#tasksSection").classList.remove("is-hidden");renderTasks()}else if(s==="meetings"){$("#meetingsSection").classList.remove("is-hidden");renderMeetings()}else if(s==="documents"){$("#documentsSection").classList.remove("is-hidden");renderDocuments()}else{$("#placeholderSection").classList.remove("is-hidden");$("#placeholderTitle").textContent=$("#pageTitle").textContent}}
+function setSel(s,v){if(!s)return;if(v&&![...s.options].some(o=>o.value===v)){const o=document.createElement("option");o.value=v;o.textContent=v;s.appendChild(o)}s.value=v||""}
+function openCreate(){$("#contactForm").reset();$("#contactForm select[name=owner]").value=state.user;$("#contactModal").classList.remove("is-hidden");document.body.style.overflow="hidden"}function closeCreate(){$("#contactModal").classList.add("is-hidden");document.body.style.overflow=""}
+function openRecord(id){const c=state.contacts.find(x=>x.id===id);if(!c)return;const f=$("#recordForm");for(const k of["id","name","organisation","city","phone","email","website","notes"])if(f.elements[k])f.elements[k].value=c[k]||"";for(const k of["type","country","stage","status","owner"])setSel(f.elements[k],c[k]);$("#recordModalTitle").textContent=c.name;$("#recordCompanyPreview").textContent=[c.organisation,c.city].filter(Boolean).join(" · ")||c.type;$("#recordAvatar").textContent=initials(c.name);const a=$("#recordWebsiteLink");a.href=c.website||"#";a.textContent=c.website?c.website.replace(/^https?:\/\//,""):"No website added";$("#recordModal").classList.remove("is-hidden");document.body.style.overflow="hidden"}function closeRecord(){$("#recordModal").classList.add("is-hidden");document.body.style.overflow=""}
+function leadRow(l={}){l=nl(l);return`<div class="lead-card" data-lead-id="${escapeHtml(l.id)}"><input data-lead="name" placeholder="Lead name" value="${escapeHtml(l.name)}"><input data-lead="role" placeholder="Role / title" value="${escapeHtml(l.role)}"><input data-lead="email" placeholder="Email" value="${escapeHtml(l.email)}"><button type="button" class="icon-btn" data-remove-lead>×</button><input data-lead="phone" placeholder="Phone" value="${escapeHtml(l.phone)}"><select data-lead="stage"><option ${l.stage==="Prospect"?"selected":""}>Prospect</option><option ${l.stage==="Lead"?"selected":""}>Lead</option><option ${l.stage==="Partner"?"selected":""}>Partner</option></select></div>`}
+function openEntity(id=null){const k=state.entityKind,e=id?state.entities.find(x=>x.id===id):ne({kind:k,stage:k==="Partner"?"Partner":"Prospect",owner:state.user,leads:[]});if(!e)return;const f=$("#entityForm");f.reset();for(const x of["id","kind","name","city","country","website","phone","email","notes"])f.elements[x].value=e[x]||"";setSel(f.elements.stage,e.stage);setSel(f.elements.owner,e.owner);$("#entityModalTitle").textContent=e.name||`New ${k}`;$("#entityKindLabel").textContent=`${k.toUpperCase()} RECORD`;$("#entityAvatar").textContent=initials(e.name||k);$("#entityCityPreview").textContent=[e.city,e.country].filter(Boolean).join(", ")||"Relationship record";$("#entityLeadsEditor").innerHTML=(e.leads||[]).map(leadRow).join("");$("#deleteEntityBtn").classList.toggle("is-hidden",!id);$("#entityModal").classList.remove("is-hidden");document.body.style.overflow="hidden"}function closeEntity(){$("#entityModal").classList.add("is-hidden");document.body.style.overflow=""}
+function collectLeads(){return $$("#entityLeadsEditor .lead-card").map(c=>nl({id:c.dataset.leadId,name:c.querySelector('[data-lead="name"]').value,role:c.querySelector('[data-lead="role"]').value,email:c.querySelector('[data-lead="email"]').value,phone:c.querySelector('[data-lead="phone"]').value,stage:c.querySelector('[data-lead="stage"]').value})).filter(x=>x.name)}
+function box(id,every=false,sel=[]){$(id).innerHTML=[...(every?["Everyone"]:[]),...USERS].map(v=>`<label><input type="checkbox" value="${escapeHtml(v)}" ${sel.includes(v)?"checked":""}> ${escapeHtml(v)}</label>`).join("")}function checked(id){return $$(`${id} input:checked`).map(x=>x.value)}
+function openTask(id=null){const t=id?state.tasks.find(x=>x.id===id):nt({createdBy:state.user,assignees:[state.user],visibleTo:["Everyone"]}),f=$("#taskForm");f.reset();for(const k of["id","title","details","due"])f.elements[k].value=t[k]||"";setSel(f.elements.priority,t.priority);setSel(f.elements.status,t.status);box("#taskAssignees",false,t.assignees);box("#taskVisibility",true,t.visibleTo);$("#taskModalTitle").textContent=id?"Edit Task":"Create Task";$("#deleteTaskBtn").classList.toggle("is-hidden",!id);$("#taskModal").classList.remove("is-hidden");document.body.style.overflow="hidden"}function closeTask(){$("#taskModal").classList.add("is-hidden");document.body.style.overflow=""}
+function openMeeting(id=null){const m=id?state.meetings.find(x=>x.id===id):nm({createdBy:state.user,attendees:[state.user],visibleTo:["Everyone"]}),f=$("#meetingForm");f.reset();for(const k of["id","title","details","datetime","location","link"])f.elements[k].value=m[k]||"";box("#meetingAttendees",false,m.attendees);box("#meetingVisibility",true,m.visibleTo);$("#meetingModalTitle").textContent=id?"Edit Meeting":"Create Meeting";$("#deleteMeetingBtn").classList.toggle("is-hidden",!id);$("#meetingModal").classList.remove("is-hidden");document.body.style.overflow="hidden"}function closeMeeting(){$("#meetingModal").classList.add("is-hidden");document.body.style.overflow=""}
+function openDocument(file){if(file.size>1.5*1024*1024){alert("Keep files under 1.5 MB in this static prototype.");return}const r=new FileReader();r.onload=()=>{state.pendingDocument={name:file.name,size:file.size,type:file.type,dataUrl:r.result};const f=$("#documentForm");f.reset();f.elements.title.value=file.name;box("#documentVisibility",true,["Everyone"]);$("#documentFileMeta").textContent=`${file.name} · ${Math.round(file.size/1024)} KB`;$("#documentModal").classList.remove("is-hidden");document.body.style.overflow="hidden"};r.readAsDataURL(file)}function closeDocument(){$("#documentModal").classList.add("is-hidden");document.body.style.overflow="";state.pendingDocument=null}
+$("#loginForm").addEventListener("submit",async e=>{e.preventDefault();$("#loginError").textContent=(await login($("#loginUser").value,$("#loginPassword").value))?"":"Incorrect user or password."});$("#logoutBtn").addEventListener("click",logout);$$('.nav-item[data-section]').forEach(b=>b.addEventListener("click",()=>switchSection(b.dataset.section)));
+$("#createContactBtn").addEventListener("click",openCreate);$$("[data-close-modal]").forEach(x=>x.addEventListener("click",closeCreate));$$("[data-close-record]").forEach(x=>x.addEventListener("click",closeRecord));
+$("#contactForm").addEventListener("submit",e=>{e.preventDefault();const c=nc(Object.fromEntries(new FormData(e.currentTarget).entries()));state.contacts.unshift(c);persist();closeCreate();renderContacts();renderHome();openRecord(c.id)});
+$("#recordForm").addEventListener("submit",e=>{e.preventDefault();const c=nc(Object.fromEntries(new FormData(e.currentTarget).entries())),i=state.contacts.findIndex(x=>x.id===c.id);if(i>=0)state.contacts[i]={...state.contacts[i],...c};persist();renderContacts();renderHome();closeRecord()});
+$("#deleteRecordBtn").addEventListener("click",()=>{const id=$("#recordForm").elements.id.value;if(confirm("Delete this contact?")){state.contacts=state.contacts.filter(c=>c.id!==id);persist();renderContacts();renderHome();closeRecord()}});
+$("#contactsTableBody").addEventListener("click",e=>{if(e.target.closest("[data-row-control]"))return;const r=e.target.closest("[data-contact-id]");if(r)openRecord(r.dataset.contactId)});$("#homeSection").addEventListener("click",e=>{const r=e.target.closest("[data-contact-id]");if(r)openRecord(r.dataset.contactId)});["#globalSearch","#filterSearch"].forEach(s=>$(s)?.addEventListener("input",renderContacts));$$(".countryFilter,.typeFilter,.statusFilter").forEach(x=>x.addEventListener("change",renderContacts));
+$("#createEntityBtn").addEventListener("click",()=>openEntity());$("#entitiesTableBody").addEventListener("click",e=>{const r=e.target.closest("[data-entity-id]");if(r)openEntity(r.dataset.entityId)});$$("[data-close-entity]").forEach(x=>x.addEventListener("click",closeEntity));$("#addEntityLeadBtn").addEventListener("click",()=>$("#entityLeadsEditor").insertAdjacentHTML("beforeend",leadRow()));$("#entityLeadsEditor").addEventListener("click",e=>{const b=e.target.closest("[data-remove-lead]");if(b)b.closest(".lead-card").remove()});
+$("#entityForm").addEventListener("submit",e=>{e.preventDefault();const o=ne(Object.fromEntries(new FormData(e.currentTarget).entries()));o.leads=collectLeads();const i=state.entities.findIndex(x=>x.id===o.id);if(i>=0)state.entities[i]={...state.entities[i],...o};else state.entities.unshift(o);persist();closeEntity();renderEntities();renderLeads()});$("#deleteEntityBtn").addEventListener("click",()=>{const id=$("#entityForm").elements.id.value;if(confirm("Delete this record?")){state.entities=state.entities.filter(e=>e.id!==id);persist();closeEntity();renderEntities();renderLeads()}});
+$("#createTaskBtn").addEventListener("click",()=>openTask());$("#tasksList").addEventListener("click",e=>{const r=e.target.closest("[data-task-id]");if(r)openTask(r.dataset.taskId)});$$("[data-close-task]").forEach(x=>x.addEventListener("click",closeTask));$("#taskForm").addEventListener("submit",e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.currentTarget).entries());d.assignees=checked("#taskAssignees");d.visibleTo=checked("#taskVisibility");d.createdBy=state.tasks.find(t=>t.id===d.id)?.createdBy||state.user;if(!d.visibleTo.length)d.visibleTo=[state.user];const t=nt(d),i=state.tasks.findIndex(x=>x.id===t.id);if(i>=0)state.tasks[i]=t;else state.tasks.unshift(t);persist();closeTask();renderTasks()});$("#deleteTaskBtn").addEventListener("click",()=>{const id=$("#taskForm").elements.id.value;if(id&&confirm("Delete this task?")){state.tasks=state.tasks.filter(t=>t.id!==id);persist();closeTask();renderTasks()}});
+$("#createMeetingBtn").addEventListener("click",()=>openMeeting());$("#meetingsList").addEventListener("click",e=>{const r=e.target.closest("[data-meeting-id]");if(r)openMeeting(r.dataset.meetingId)});$$("[data-close-meeting]").forEach(x=>x.addEventListener("click",closeMeeting));$("#meetingForm").addEventListener("submit",e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.currentTarget).entries());d.attendees=checked("#meetingAttendees");d.visibleTo=checked("#meetingVisibility");d.createdBy=state.meetings.find(m=>m.id===d.id)?.createdBy||state.user;if(!d.visibleTo.length)d.visibleTo=[state.user];const m=nm(d),i=state.meetings.findIndex(x=>x.id===m.id);if(i>=0)state.meetings[i]=m;else state.meetings.unshift(m);persist();closeMeeting();renderMeetings()});$("#deleteMeetingBtn").addEventListener("click",()=>{const id=$("#meetingForm").elements.id.value;if(id&&confirm("Delete this meeting?")){state.meetings=state.meetings.filter(m=>m.id!==id);persist();closeMeeting();renderMeetings()}});
+const dz=$("#dropZone"),fi=$("#documentFileInput");["dragenter","dragover"].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.add("is-over")}));["dragleave","drop"].forEach(v=>dz.addEventListener(v,e=>{e.preventDefault();dz.classList.remove("is-over")}));dz.addEventListener("drop",e=>{const f=e.dataTransfer.files?.[0];if(f)openDocument(f)});fi.addEventListener("change",()=>{const f=fi.files?.[0];if(f)openDocument(f);fi.value=""});$$("[data-close-document]").forEach(x=>x.addEventListener("click",closeDocument));$("#documentForm").addEventListener("submit",e=>{e.preventDefault();if(!state.pendingDocument)return;const d=nd({...state.pendingDocument,...Object.fromEntries(new FormData(e.currentTarget).entries()),visibleTo:checked("#documentVisibility"),uploadedBy:state.user});if(!d.visibleTo.length)d.visibleTo=[state.user];state.documents.unshift(d);persist();closeDocument();renderDocuments()});$("#documentsList").addEventListener("click",e=>{const del=e.target.closest("[data-delete-doc]"),down=e.target.closest("[data-download-doc]");if(del&&confirm("Delete this document?")){state.documents=state.documents.filter(d=>d.id!==del.dataset.deleteDoc);persist();renderDocuments()}if(down){const d=state.documents.find(x=>x.id===down.dataset.downloadDoc);if(d?.dataUrl){const a=document.createElement("a");a.href=d.dataUrl;a.download=d.name||d.title;a.click()}}});
+window.addEventListener("storage",()=>{state.contacts=readJSON("ilsc-contacts",[]).map(nc);state.entities=readJSON("ilsc-entities",[]).map(ne);state.tasks=readJSON("ilsc-tasks",[]).map(nt);state.meetings=readJSON("ilsc-meetings",[]).map(nm);state.documents=readJSON("ilsc-documents",[]).map(nd);switchSection(state.section);counts()});
+if(state.user&&USERS.includes(state.user))showApp();else showLogin();
 </script>
 </body>
 </html>
