@@ -1,0 +1,6 @@
+{
+  "algorithm": "scrypt",
+  "salt": "3628819eaa0327918f4e388e0d1be922",
+  "hash": "cf6373bbbbc17dc031e1249a7b930a9f34cf7142ab64e1c82fe1c3991d68ab24d134b1025c6a2f9d17524124a97769bd05d6d9fce054f02e648eca034b1591da",
+  "users": ["Bohdan", "Peder", "Sunny", "Simon", "Augustian", "LinArctic"]
+}

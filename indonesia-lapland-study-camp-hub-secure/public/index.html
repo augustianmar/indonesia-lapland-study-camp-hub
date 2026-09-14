@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5ecdf">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Indonesia–Lapland Study Camp Hub</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div id="loginView" class="login-shell">
+    <div class="login-orbit orbit-a"></div>
+    <div class="login-orbit orbit-b"></div>
+    <section class="login-card">
+      <div class="login-brand">
+        <div class="mini-mark">IL</div>
+        <div>
+          <p class="eyebrow">INDONESIA ↔ LAPLAND</p>
+          <h1>Study Camp <em>Hub</em></h1>
+        </div>
+      </div>
+      <p class="login-intro">Private workspace for partners, schools, contacts and study-camp development.</p>
+      <form id="loginForm" class="login-form" autocomplete="on">
+        <label>
+          <span>User</span>
+          <select id="loginUser" autocomplete="username" required>
+            <option value="">Select user…</option>
+            <option>Bohdan</option>
+            <option>Peder</option>
+            <option>Sunny</option>
+            <option>Simon</option>
+            <option>Augustian</option>
+            <option>LinArctic</option>
+          </select>
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter password" required>
+        </label>
+        <p id="loginError" class="form-error" aria-live="polite"></p>
+        <button id="loginButton" class="btn btn-dark btn-large" type="submit">Enter Hub <span>↗</span></button>
+      </form>
+      <div class="login-footer">PRIVATE WORKSPACE · ROVANIEMI / INDONESIA</div>
+    </section>
+  </div>
+
+  <div id="appView" class="app-shell is-hidden">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="mini-mark inverse">IL</div>
+        <div><strong>Study Camp Hub</strong><span>Indonesia ↔ Lapland</span></div>
+      </div>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <button class="nav-item" data-section="home"><span class="nav-icon">⌂</span><span>Home</span></button>
+        <button class="nav-item" data-section="dashboard"><span class="nav-icon">◫</span><span>Dashboard</span></button>
+        <div class="nav-label">RELATIONSHIPS</div>
+        <button class="nav-item is-active" data-section="contacts"><span class="nav-icon">◎</span><span>Contacts</span><span class="count-pill" id="contactsCount">0</span></button>
+        <button class="nav-item" data-section="organisations"><span class="nav-icon">▦</span><span>Organisations</span></button>
+        <button class="nav-item" data-section="schools"><span class="nav-icon">▤</span><span>Schools</span></button>
+        <button class="nav-item" data-section="partners"><span class="nav-icon">↔</span><span>Partners</span></button>
+        <div class="nav-label">PIPELINE</div>
+        <button class="nav-item" data-section="leads"><span class="nav-icon">◇</span><span>Leads</span></button>
+        <button class="nav-item" data-section="opportunities"><span class="nav-icon">△</span><span>Opportunities</span></button>
+        <button class="nav-item" data-section="camps"><span class="nav-icon">✦</span><span>Study Camps</span></button>
+        <div class="nav-label">WORK</div>
+        <button class="nav-item" data-section="tasks"><span class="nav-icon">✓</span><span>Tasks</span></button>
+        <button class="nav-item" data-section="meetings"><span class="nav-icon">◷</span><span>Meetings</span></button>
+        <button class="nav-item" data-section="documents"><span class="nav-icon">▱</span><span>Documents</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-section="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+        <div class="sidebar-user">
+          <div class="avatar" id="sidebarAvatar">A</div>
+          <div><strong id="sidebarUserName"></strong><span>Signed in</span></div>
+          <button id="logoutBtn" title="Log out" aria-label="Log out">↗</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div><p class="topbar-kicker">INDONESIA–LAPLAND STUDY CAMP HUB</p><h2 id="pageTitle">Contacts</h2></div>
+        <div class="topbar-actions">
+          <div class="global-search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search records"></div>
+          <button class="square-btn" id="quickAddBtn" title="Quick add">＋</button>
+          <div class="top-user" id="topUser"></div>
+        </div>
+      </header>
+
+      <section id="contactsSection" class="workspace-section">
+        <div class="viewbar">
+          <div class="view-tabs"><button class="view-tab is-active">All Contacts</button><button class="ghost-btn">•••</button></div>
+          <button id="createContactBtn" class="btn btn-rust">Create Contact <span>＋</span></button>
+        </div>
+        <div class="content-grid">
+          <aside class="filters-panel">
+            <h3>Filter Contacts by</h3>
+            <div class="filter-search"><span>⌕</span><input id="filterSearch" type="search" placeholder="Search"></div>
+            <div class="filter-group">
+              <h4>Project filters</h4>
+              <label><input type="checkbox" value="Indonesia" class="countryFilter"> Indonesia</label>
+              <label><input type="checkbox" value="Finland" class="countryFilter"> Finland</label>
+              <label><input type="checkbox" value="School" class="typeFilter"> Schools</label>
+              <label><input type="checkbox" value="Operator" class="typeFilter"> Operators</label>
+              <label><input type="checkbox" value="Partner" class="typeFilter"> Partners</label>
+            </div>
+            <div class="filter-group">
+              <h4>Relationship</h4>
+              <label><input type="checkbox" value="Active" class="statusFilter"> Active</label>
+              <label><input type="checkbox" value="Warm" class="statusFilter"> Warm</label>
+              <label><input type="checkbox" value="New" class="statusFilter"> New</label>
+            </div>
+          </aside>
+
+          <div class="records-panel">
+            <div class="records-toolbar">
+              <div class="toolbar-left"><button class="tool-btn">▽ Filter</button><button class="tool-btn">⇅ Sort</button><button class="tool-btn is-active">☷</button><button class="tool-btn">▥</button></div>
+              <div class="records-meta"><span id="visibleCount">0</span> records</div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th class="check-col"><input type="checkbox"></th><th>Contact Name</th><th>Organisation</th><th>Role / Type</th><th>Country</th><th>Status</th><th>Owner</th></tr></thead>
+                <tbody id="contactsTableBody"></tbody>
+              </table>
+              <div id="emptyState" class="empty-state is-hidden"><div class="empty-mark">↔</div><h3>No contacts found</h3><p>Adjust the filters or create a new project contact.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="placeholderSection" class="workspace-section is-hidden">
+        <div class="placeholder-card"><p class="eyebrow">MODULE READY FOR BUILD</p><h3 id="placeholderTitle">Dashboard</h3><p>This module is ready for the next project rules and fields.</p></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="contactModal" class="modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card">
+      <div class="modal-head"><div><p class="eyebrow">RECORD</p><h3 id="contactModalTitle">Create Contact</h3></div><button class="modal-close" data-close-modal>×</button></div>
+      <form id="contactForm" class="contact-form">
+        <input type="hidden" name="id">
+        <div class="form-grid">
+          <label><span>Name *</span><input name="name" maxlength="120" required></label>
+          <label><span>Organisation</span><input name="organisation" maxlength="160"></label>
+          <label><span>Role / Type</span><select name="type"><option>Partner</option><option>School</option><option>Operator</option><option>Distributor</option><option>Public Sector</option><option>Other</option></select></label>
+          <label><span>Country</span><select name="country"><option>Finland</option><option>Indonesia</option><option>Sweden</option><option>Other</option></select></label>
+          <label><span>Status</span><select name="status"><option>New</option><option>Warm</option><option>Active</option><option>Paused</option></select></label>
+          <label><span>Owner</span><select name="owner"><option>Bohdan</option><option>Peder</option><option>Sunny</option><option>Simon</option><option>Augustian</option><option>LinArctic</option></select></label>
+          <label class="full"><span>Email</span><input name="email" type="email" maxlength="254"></label>
+          <label class="full"><span>Notes</span><textarea name="notes" rows="4" maxlength="4000"></textarea></label>
+        </div>
+        <p id="contactError" class="form-error" aria-live="polite"></p>
+        <div class="modal-actions"><button type="button" class="btn btn-outline" data-close-modal>Cancel</button><button class="btn btn-dark" type="submit">Save Contact</button></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
